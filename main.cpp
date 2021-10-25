@@ -136,7 +136,7 @@ int main(int argc, char* argv[]) {
 	OpenParams params(dev_info.index);
 	{
 		params.framerate = 30;
-		params.depth_mode = DepthMode::DEPTH_RAW;
+		//params.depth_mode = DepthMode::DEPTH_RAW;
 		params.stream_mode = StreamMode::STREAM_1280x720;
 		params.ir_intensity = 4;
 	}
