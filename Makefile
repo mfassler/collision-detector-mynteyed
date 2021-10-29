@@ -30,7 +30,7 @@ endif
 
 CPPFLAGS += -DWITH_OPENCV 
 #-DWITH_OPENCV4
-CPPFLAGS += -I/usr/local/include/opencv4/
+CPPFLAGS += -I/usr/local/include/opencv4/ #OpenCV4 path
 CPPFLAGS += -O3
 #CPPFLAGS += -g
 
@@ -39,7 +39,7 @@ LD = g++
 #LDFLAGS = -L/usr/local/lib/
 LDFLAGS = -Wall -O3 -std=c++11     -rdynamic
 LDFLAGS += -pthread
-LDFLAGS += -Wl,-rpath,/home/adin/MYNT-EYE-D-SDK/3rdparty/eSPDI/linux/x64
+LDFLAGS += -Wl,-rpath,~/MYNT-EYE-D-SDK/3rdparty/eSPDI/linux/x64 #MYNT-EYE-D SDK path
 LDLIBS += -lmynteye_depth
 LDLIBS += $(shell pkg-config --libs opencv4)
 #LDLIBS += -leSPDI
